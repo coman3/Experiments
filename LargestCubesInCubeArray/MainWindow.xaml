@@ -1,0 +1,48 @@
+﻿<Window x:Class="LargestCubesInCubeArray.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LargestCubesInCubeArray"
+        xmlns:core="clr-namespace:Algorithms;assembly=Algorithms"
+        mc:Ignorable="d"
+        Title="Largest Cubes In Cube Array" Height="650" Width="850"  MinWidth="800" MinHeight="600">
+    <Grid Background="WhiteSmoke">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*">
+            </ColumnDefinition>
+            <ColumnDefinition Width="200px"/>
+        </Grid.ColumnDefinitions>
+        <Grid  Grid.Column="0">
+            <Border Background="White" BorderBrush="Black" BorderThickness="1" Width="600" Height="600" >
+                <Canvas HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="DrawCanvas" />
+            </Border>
+        </Grid>
+        <Grid Grid.Column="1">
+            <GroupBox Margin="5, 5, 5, 10" Background="White" Header="Options">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Grid.Row="0">
+                        <Label Content="Size" />
+                        <core:NubmerBox Grid.Column="0" Margin="10, 2" x:Name="SizeNumberBox" Text="32"/>
+                        <Label Content="Noise Filter" />
+                        <core:NubmerBox Grid.Column="0" Margin="10, 2" x:Name="NoiseFilterNumberBox" Text="500"/>
+                        <Button Padding="10, 2" Margin="10, 5" Click="GenerateCubesButton_OnClick">Generate Cubes</Button>
+
+                        <Separator Margin="0, 10" />
+                        <Label Content="Step Count" />
+                        <core:NubmerBox Margin="10, 2" x:Name="StepCountNumberBox"/>
+                    </StackPanel>
+                    <WrapPanel Grid.Row="1" HorizontalAlignment="Right">
+                        <Button Content="Full" Margin="5" Padding="20, 2" Click='CalulateFull_OnClick'/>
+                        <Button Content="Step" Margin="5" Padding="20, 2"/>
+                    </WrapPanel>
+                </Grid>
+            </GroupBox>
+        </Grid>
+    </Grid>
+</Window>

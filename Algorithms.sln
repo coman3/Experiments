@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms", "Algorithms\Algorithms.csproj", "{F58551FC-F3AD-48B5-B9EF-084A224FD84B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargestCubesInCubeArray", "LargestCubesInCubeArray\LargestCubesInCubeArray.csproj", "{0400F0BD-7E11-4636-AA10-84A157C16D23}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F58551FC-F3AD-48B5-B9EF-084A224FD84B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F58551FC-F3AD-48B5-B9EF-084A224FD84B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F58551FC-F3AD-48B5-B9EF-084A224FD84B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F58551FC-F3AD-48B5-B9EF-084A224FD84B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0400F0BD-7E11-4636-AA10-84A157C16D23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0400F0BD-7E11-4636-AA10-84A157C16D23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0400F0BD-7E11-4636-AA10-84A157C16D23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0400F0BD-7E11-4636-AA10-84A157C16D23}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2AE9F1B-430F-408D-A00E-C906F091C3FB}
+	EndGlobalSection
+EndGlobal
