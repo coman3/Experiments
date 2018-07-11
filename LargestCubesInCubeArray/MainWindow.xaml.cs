@@ -93,7 +93,7 @@ namespace LargestCubesInCubeArray
             DrawCanvas.Children.Clear();
         }
 
-        private async void CalulateFull_OnClick(object sender, RoutedEventArgs e)
+        private void CalulateFull_OnClick(object sender, RoutedEventArgs e)
         {
             //Start the calulation
             var calulate = new LargesCubesInCubeArray(CubeItems);
@@ -109,7 +109,6 @@ namespace LargestCubesInCubeArray
                 var itemHeight = canvasHeight / Size;
                 foreach (var rectangle in calulate.Rectangles)
                 {
-                    MessageBox.Show("Found Rectangle: " + rectangle.ToString());
                     var rect = new Border
                     {
                         Width = (rectangle.Width) * itemWidth,
@@ -124,7 +123,7 @@ namespace LargestCubesInCubeArray
                     DrawCanvas.Children.Add(rect);
                 }
             };
-            await calulate.CalulateAsync();
+            calulate.CalulateAsync();
         }
     }
 
