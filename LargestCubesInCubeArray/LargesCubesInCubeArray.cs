@@ -134,7 +134,6 @@ namespace LargestCubesInCubeArray
             while (cubePosition != -Vector2Int.One)
             {
                 cubePosition = GetFirstWorkableCubePosition();
-                Console.WriteLine("Starting new Cube at: " + $"x:{cubePosition.X} y: {cubePosition.Y}");
                 var rect = new RectangleInt(cubePosition, cubePosition);
                 rect = ExpandRectangle(rect);
                 Rectangles.Add(rect);

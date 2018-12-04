@@ -39,7 +39,7 @@
                     </StackPanel>
                     <WrapPanel Grid.Row="1" HorizontalAlignment="Right">
                         <Button Content="Full" Margin="5" Padding="20, 2" Click='CalulateFull_OnClick'/>
-                        <Button Content="Step" Margin="5" Padding="20, 2"/>
+                        <Button Content="Gen &amp; Full" Margin="5" Padding="20, 2" Click="GenAndFullButton_OnClick"/>
                     </WrapPanel>
                 </Grid>
             </GroupBox>

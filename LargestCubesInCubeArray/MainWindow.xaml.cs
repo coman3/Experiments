@@ -125,6 +125,12 @@ namespace LargestCubesInCubeArray
             };
             calulate.CalulateAsync();
         }
+
+        private void GenAndFullButton_OnClick(object sender, RoutedEventArgs e)
+        {
+            GenerateCubesButton_OnClick(sender, e);
+            CalulateFull_OnClick(sender, e);
+        }
     }
 
 
